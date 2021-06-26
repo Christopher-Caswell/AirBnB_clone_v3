@@ -16,6 +16,7 @@ app.register_blueprint(app_views)
 
 @app.teardown_appcontext
 def teardown(self):
+    """Closing time, finish your flask"""
     storage.close()
 
 if __name__ == "__main__":
